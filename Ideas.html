@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Tim Videos - Getting Started!</title>
 
@@ -16,7 +15,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <img src="https://secure.gravatar.com/avatar/ed665fc30c4688bdf7a4d4040d2eebcc?s=420" width=160>
+        <img src="https://secure.gravatar.com/avatar/ed665fc30c4688bdf7a4d4040d2eebcc?s=160" width=160>
         <h1 class="header">Ideas!</h1>
         <p class="header">Projects you could possibly work on.</p>
 
@@ -37,9 +36,9 @@
       <section>
 <h1 id="overview">Overview</h1>
 
-<p>Tim Video&#8217;s is actually a number of <strong>different</strong> but related projects. There are a huge variety of ways to get started in a huge variety of different areas.</p>
+<p>Tim Videos is actually a number of <strong>different</strong> but related projects. There are a huge variety of ways to get started in a several different areas.</p>
 
-<p>To help you decide which <strong>existing</strong> projects you might like to help out with, we have created the following flow diagram:</p>
+<p>To help you decide which <strong>existing</strong> projects you might like to contribute to, we have created the following flow diagram:</p>
 
 <p><a href="https://docs.google.com/a/mithis.com/drawings/d/1zYlT69xQqbAjzuJgKj-UhO1vRF5JNLpic8xmPrfNtXM/edit">Edit Image</a></p>
 
@@ -61,8 +60,8 @@
 </map>
 
 <ul>
-  <li>Students should checkout the <a href="Summer-Of-Code.html">Summer Of Code page</a>.</li>
-  <li>There are many bugs which in individual components which are not yet listed as potential starter projects. Check out the bug trackers!</li>
+  <li>Students should check out the <a href="Summer-Of-Code.html">Summer Of Code page</a>.</li>
+  <li>There are many bugs within individual components which are not yet listed as potential starter projects. Check out the bug trackers!</li>
   <li>Feel free to suggest your own ideas!</li>
 </ul>
 
@@ -83,7 +82,7 @@
   <li><a href="https://github.com/timvideos/getting-started/issues?labels=gst-switch">Tasks in the gst-switch project</a>.</li>
 </ul>
 
-<p>gst-switch project is intended to be a replacement of <a href="http://dvswitch.alioth.debian.org/wiki/">DVswitch</a> based on <a href="http://gstreamer.freedesktop.org/">GStreamer</a>. It aims to do interactive live mixing of incoming video streams, designed for the needs of conference recording.</p>
+<p>gst-switch project is intended to be a replacement of <a href="http://dvswitch.alioth.debian.org/wiki/">DVswitch</a> based on <a href="http://gstreamer.freedesktop.org/">GStreamer</a>. It aims to do interactive live mixing of incoming video streams, and is designed to meet the needs of conference recording.</p>
 
 <blockquote>
   <p>DVswitch is a digital video mixer intended for interactive live mixing of
@@ -97,7 +96,7 @@ live musical performances.</p>
 <h2 id="speakertrack">speakertrack</h2>
 <p><em>Use the gst-switch, code repository, mailing lists and IRC channel.</em></p>
 
-<p>speakertrack is a bunch of extensions to gstreamer and gst-switch to allow automatic tracking of speakers using PTZ cameras rather then needing a camera operator. </p>
+<p>speakertrack is a set of extensions to gstreamer (described below) and gst-switch to allow automatic tracking of speakers using PTZ cameras rather then needing a camera operator. </p>
 
 <h4 id="speakertrack-is-written-in-c-and-uses-opencv">speakertrack is written in C and uses OpenCV</h4>
 
@@ -108,9 +107,9 @@ live musical performances.</p>
   <li><a href="https://github.com/timvideos/getting-started/issues?labels=website">Tasks in the <strong>Streaming System Website</strong> project</a></li>
 </ul>
 
-<p>Repository for actually deploying a live streaming system consisting of a flumotion setup and website.</p>
+<p>Repository for deploying a live streaming system, consisting of a flumotion setup and website.</p>
 
-<h4 id="the-streaming-system-including-a-django-based-website-shell-script-set-up-scripts-and-python-watchdog-code">The streaming system including a django based website, shell script set up scripts and Python watchdog code.</h4>
+<h4 id="the-streaming-system-including-a-django-based-website-shell-script-setup-scripts-and-python-watchdog-code">The streaming system including a django-based website, shell script setup scripts and Python watchdog code.</h4>
 
 <p><br />
 <br />
@@ -125,9 +124,16 @@ live musical performances.</p>
 <h2 id="hdmi2usb">HDMI2USB</h2>
 <p><a href="http://github.com/timvideos/HDMI2USB.git">(Code)</a> | <a href="https://groups.google.com/group/hdmi2usb?hl=en-GB">(Mailing List)</a> | <a href="irc://irc.freenode.org/#hdmi2usb">(IRC Channel)</a> | <a href="http://github.com/timvideos/HDMI2USB/issues">(Bug Tracker)</a></p>
 
-<p>HDMI2USB is a core hardware project in the Tim Video&#8217;s suite. There are two types of projects to work on with the HDMI2USB system;
- * Firmware Projects - As the device uses a Xilinx Spartan 6 FPGA, developing much of the hardware is actually a process of developing software!<br /><a href="https://github.com/timvideos/HDMI2USB/wiki/Firmware">More information on current HDMI2USB firmware</a>.
- * Extension Boards - The Digilent ATLYS can be extended via the <a href="http://en.wikipedia.org/wiki/Very-high-density_cable_interconnect">VHDCI connector</a>.<br /><a href="">More information on existing HDMI2USB extension boards</a></p>
+<p>HDMI2USB is a core hardware project in the Tim Videos suite. There are two types of projects to work on with the HDMI2USB system;</p>
+
+<ul>
+  <li>
+    <p>Firmware Projects - As the device uses a Xilinx Spartan 6 FPGA, developing much of the hardware is actually a process of developing software!<br /><a href="https://github.com/timvideos/HDMI2USB/wiki/Firmware">More information on current HDMI2USB firmware</a>.</p>
+  </li>
+  <li>
+    <p>Extension Boards - The Digilent ATLYS can be extended via the <a href="http://en.wikipedia.org/wiki/Very-high-density_cable_interconnect">VHDCI connector</a>.<br /><a href="">More information on existing HDMI2USB extension boards</a></p>
+  </li>
+</ul>
 
 <p style="font-size: 18px; color: red; text-align: center;">
 <strong>!!! All hardware projects will require you to have a Digilent ATLYS prototype board !!!</strong>
@@ -189,14 +195,14 @@ demand in all the leading formats from a single server.</p>
 
 <h4 id="flumotion-is-written-in-python-and-uses-gstreamer">flumotion is written in Python and uses GStreamer</h4>
 
-<h2 id="gstreamer">gstreamer</h2>
+<h2 id="gstreamer">GStreamer</h2>
 <p><a href="http://cgit.freedesktop.org/gstreamer">(Code)</a> | <a href="http://gstreamer.freedesktop.org/lists/">(Mailing Lists)</a> | <a href="irc://irc.freenode.org/#gstreamer">(IRC Channel)</a> </p>
 
 <ul>
-  <li><a href="https://github.com/timvideos/getting-started/issues?labels=gstreamer"><strong>gstreamer</strong> Tasks</a></li>
+  <li><a href="https://github.com/timvideos/getting-started/issues?labels=gstreamer"><strong>GStreamer</strong> Tasks</a></li>
 </ul>
 
-<p>While gstreamer was <strong>not</strong> originally developed for TimVideos.us, it is used
+<p>While GStreamer was <strong>not</strong> originally developed for TimVideos.us, it is used
 heavily by gst-switch for doing video mixing and heavily by flumotion to do the
 heavy lifting of media processing. For this reason we will have numerous ideas
 on how to improve the platform for our usecase.</p>
@@ -210,7 +216,16 @@ filter technology transparently. Developers can add new codecs and filters by
 writing a simple plugin with a clean, generic interface.</p>
 </blockquote>
 
-<h4 id="gstreamer-is-written-in-c">gstreamer is written in C</h4>
+<h4 id="gstreamer-is-written-in-c">GStreamer is written in C</h4>
+
+<!-- gst-switch References -->
+
+<!-- gst-switch (speaker track) -->
+
+<!-- HDMI2USB References -->
+
+<!-- Streaming System -->
+
 
       </section>
     </div>

@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Tim Videos - Getting Started!</title>
 
@@ -16,7 +15,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <img src="https://secure.gravatar.com/avatar/ed665fc30c4688bdf7a4d4040d2eebcc?s=420" width=160>
+        <img src="https://secure.gravatar.com/avatar/ed665fc30c4688bdf7a4d4040d2eebcc?s=160" width=160>
         <h1 class="header">Getting Started!</h1>
         <p class="header">How to start contributing to TimVideos.us</p>
 
@@ -37,13 +36,13 @@
       <section>
 <h1 id="welcome">Welcome!</h1>
 
-<p>Welcome to TimVideos.us!  We&#8217;re busy working on several exciting video-related Open Source projects right now.  Whether you want to work hands-on with hardware or code in a variety of languages, we have a project for you.  Join the team! </p>
+<p>Welcome to TimVideos.us!  We&#8217;re busy working on several exciting video-related open source projects right now.  Whether you want to work hands-on with hardware or code in a variety of languages, we have a project for you.  Join the team! </p>
 
 <p>This information should help you explore the projects and learn how to get started.</p>
 
 <h2 id="getting-started">Getting Started</h2>
 
-<p>Google Summer of Code (or similar project based program) students should first head over to the <a href="/Summer-Of-Code.html">Summer Of Code</a> page and then head to our <a href="/Ideas.html">Ideas!</a> page.</p>
+<p>Google Summer of Code (or similar project-based program) students should first head over to the <a href="/Summer-Of-Code.html">Summer Of Code</a> page and then head to our <a href="/Ideas.html">Ideas!</a> page.</p>
 
 <p>If you are just interested in contributing and this is your first visit, head over to the <a href="/Ideas.html">Ideas!</a> page.</p>
 
@@ -68,27 +67,27 @@
       <td>&#160;</td>
     </tr>
     <tr>
-      <td>gst-switch</td>
+      <td>GST-switch</td>
       <td><a href="http://github.com/timvideos/gst-switch">(C)</a>&nbsp;<a href="https://groups.google.com/group/gst-switch">(M)</a>&nbsp;<a href="irc://irc.freenode.org/#gst-switch">(I)</a></td>
-      <td>Replacement for DVSwitch based around gstreamer. It aims to do interactive live mixing of incoming video streams, designed for the needs of conference recording.</td>
+      <td>GST-switch is a replacement for DVSwitch, and is based around GStreamer (described below). GST-switch aims to do interactive live mixing of incoming video streams, designed to meet the needs of conference recording.</td>
       <td>duzy, mithro</td>
     </tr>
     <tr>
       <td>speakertrack</td>
       <td><a href="http://github.com/timvideos/gst-switch">(C)</a></td>
-      <td>Extensions to gstreamer and gst-switch to allow automatic tracking of speakers using PTZ cameras rather then needing a camera operator.</td>
+      <td>Speakertrack is an extension to GStreamer and gst-switch to allow automatic tracking of speakers using remotely-operated PTZ cameras rather then relying on a camera operator.</td>
       <td>duzy, mithro</td>
     </tr>
     <tr>
       <td>streaming-system</td>
       <td><a href="http://github.com/timvideos/streaming-system">(C)</a> <a href="https://groups.google.com/group/timvideos">(M)</a> <a href="irc://irc.freenode.org/#timvideos">(I)</a></td>
-      <td>Repository for actually deploying a live streaming system, includes website, set up scripts and watchdog code.</td>
+      <td>Streaming-system is a comprehensive video conferencing package that allows users to set up and deploy a live streaming system. It includes a website, setup scripts and watchdog code.</td>
       <td>mithro, iiie,</td>
     </tr>
     <tr>
       <td>HDMI2USB</td>
       <td><a href="http://github.com/timvideos/HDMI2USB">(C)</a> <a href="http://github.com/timvideos/HDMI2USB">(M)</a> <a href="irc://irc.freenode.org/#irc">(I)</a></td>
-      <td>Hardware based on a Xilinx Spartan 6 FPGA for capturing HDMI, DVI and DisplayPort data. Replacement for TwinPact.</td>
+      <td>HDMI2USB is hardware based on a Xilinx Spartan 6 FPGA for capturing HDMI, DVI and DisplayPort data. It facilitates presentation and video sharing with remote users and allows for recording for later viewing.</td>
       <td>mithro,</td>
     </tr>
   </tbody>
@@ -112,16 +111,25 @@
       <td><img src="http://www.flumotion.com/media/images/favicon.png" class="favicon" /> <strong>flumotion</strong></td>
       <td><a href="https://code.flumotion.com/cgit/">(C)</a> <a href="http://lists.fluendo.com/mailman/listinfo">(M)</a> <a href="irc://irc.freenode.org/#fluendo">(I)</a></td>
       <td>Flumotion is an award winning streaming software created in 2006 by a group of open source developers and multimedia experts. Flumotion Streaming Software allows broadcasters and companies to stream content live and on demand in all the leading formats from a single server.</td>
-      <td>Used heavily to do the live video streaming side.</td>
+      <td>Used for live video streaming.</td>
     </tr>
     <tr>
       <td><img src="http://gstreamer.freedesktop.org/images/favicon.png" class="favicon" /> <strong>gstreamer</strong></td>
       <td><a href="http://cgit.freedesktop.org/gstreamer">(C)</a> <a href="http://gstreamer.freedesktop.org/lists/">(M)</a> <a href="irc://irc.freenode.org/#gstreamer">(I)</a></td>
       <td>GStreamer is a library for constructing graphs of media-handling components. The applications it supports range from simple Ogg/Vorbis playback, audio/video streaming to complex audio (mixing) and video (non-linear editing) processing. Applications can take advantage of advances in codec and filter technology transparently. Developers can add new codecs and filters by writing a simple plugin with a clean, generic interface.</td>
-      <td>Used heavily by <strong>gst-switch</strong>, <strong>speakertrack</strong> and <strong>flumotion</strong>.</td>
+      <td>Used by <strong>gst-switch</strong>, <strong>speakertrack</strong> and <strong>flumotion</strong>.</td>
     </tr>
   </tbody>
 </table>
+
+<!-- gst-switch References -->
+
+<!-- gst-switch (speaker track) -->
+
+<!-- HDMI2USB References -->
+
+<!-- Streaming System -->
+
 
       </section>
     </div>

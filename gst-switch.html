@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Tim Videos - Getting Started!</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pygment_trac.css">
+    <script src="js/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <img src="https://secure.gravatar.com/avatar/ed665fc30c4688bdf7a4d4040d2eebcc?s=160" width=160>
+        <h1 class="header">gst-switch</h1>
+        <p class="header">A modern Gstreamer based software video mixer</p>
+
+        <ul>
+<!--
+          <li class="download"><a class="buttons" href="https://github.com/timvideos/getting-started/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/timvideos/getting-started/tarball/master">Download TAR</a></li>
+  -->
+          <li><a class="buttons" href="Home.html">Getting Started</a></li>
+          <li><a class="buttons" href="Ideas.html">Ideas</a> (<a href="https://github.com/timvideos/getting-started/issues">Tracker</a>)</li>
+          <li><a class="buttons" href="People.html">People</a></li>
+
+        </ul>
+
+        <p class="header"><a class="header name" href="https://github.com/timvideos/getting-started/wiki/gst-switch/_edit">Edit</a></p> 
+
+      </header>
+      <section>
+<h1 id="gst-switch">gst-switch</h1>
+
+<ul>
+  <li><a href="http://github.com/timvideos/gst-switch">(Code)</a></li>
+  <li><a href="https://groups.google.com/group/gst-switch">(Mailing List)</a></li>
+  <li><a href="irc://irc.freenode.org/#gst-switch">(IRC Channel)</a></li>
+  <li><a href="http://github.com/timvideos/gst-switch/issues">(Bug Tracker)</a></li>
+</ul>
+
+<h4 id="gst-switch-is-written-in-c-and-uses-gstreamer">gst-switch is written in C and uses GStreamer</h4>
+
+<p>gst-switch is a software based system for interactive live mixing of incoming video streams, designed for the needs of conference recording.</p>
+
+<h3 id="functional-diagram">Functional diagram</h3>
+<p><a href="https://docs.google.com/a/mithis.com/drawings/d/18sU5uECrPgQzxLWzc7RaYWRs9F3aocx0chf16-yxBEY/edit">Edit</a></p>
+
+<p><img src="https://docs.google.com/drawings/d/18sU5uECrPgQzxLWzc7RaYWRs9F3aocx0chf16-yxBEY/pub?w=1874&amp;h=971" style="width: 100%;" /></p>
+
+<h3 id="documents">Documents</h3>
+
+<ul>
+  <li><a href="https://docs.google.com/a/mithis.com/document/d/1_blj8u6ToyaZwdikCmUSGFwdpoAYNCyDYEHgXtPL8mI/edit#heading=h.bhhck1xjratt">gst-switch design document</a></li>
+</ul>
+
+<h3 id="dvswitch-and-gst-switch">DVSwitch and gst-switch</h3>
+
+<blockquote>
+  <p>DVswitch is a digital video mixer intended for interactive live mixing of
+several incoming DV video streams. It was originally designed for the needs
+of DebConf; It has now been used for various other conferences, meetings and
+live musical performances.</p>
+</blockquote>
+
+<p>gst-switch project is intended to be a replacement of <a href="http://dvswitch.alioth.debian.org/wiki/">DVswitch</a> based on <a href="http://gstreamer.freedesktop.org/">GStreamer</a>. It aims to do interactive live mixing of incoming video streams, designed for the needs of conference recording.</p>
+
+<h1 id="parts-of-gst-switch">Parts of gst-switch</h1>
+
+<h2 id="gst-switch-server">gst-switch server</h2>
+
+<p>The gst-switch server is the part which actually does the real work. It accepts incoming video streams and then chooses one to output.  It also supports a limited number of ways to mix a maximum of 2 streams at once.</p>
+
+<p>The server has a constant stream output stream. This stream is well formed for a given format set on start (IE 720p60 or 1080p50 or similar). Both video output and audio output regardless of any problems in inputs (such as corruption or dropped frames) and even if no input streams remain.</p>
+
+<h2 id="gst-switch-gui">gst-switch gui</h2>
+
+<p>The user interface should be a program which connects to the gst-switch server and allows a user to configure features about the server.</p>
+
+<p>The user interface;
+ * Shows previews of all the incoming videos (and shows audio levels).
+ * Lets you select which incoming video should be sent to the output.
+ * Lets you select which incoming audio should be sent to the output (independent of video).
+ * Lets you select Video 1 and Video 2 in PIP mode.
+ * Lets you position the PIP in Option 2.
+ * Lets you set the fade delay.</p>
+
+<h2 id="gst-switch-streamers">gst-switch streamers</h2>
+
+<p>Take data from a gstreamer pipeline and send it up to the gst-switch server.</p>
+
+<h1 id="speakertrack">speakertrack</h1>
+
+<h4 id="speakertrack-is-written-in-c-and-uses-opencv">speakertrack is written in C and uses OpenCV</h4>
+
+<p>speakertrack is a bunch of extensions to gstreamer and gst-switch to allow automatic tracking of speakers using PTZ cameras rather then needing a camera operator. </p>
+
+<h2 id="documents-1">Documents</h2>
+
+<ul>
+  <li><a href="https://docs.google.com/a/mithis.com/document/d/1Fj4zsJviOPCirIySUfQ5_NP_MXln_DksvqC01742q78/edit">Spec (Stage 1) - Extend &#8220;facedetect&#8221; into speaker tracking</a></li>
+  <li><a href="https://docs.google.com/a/mithis.com/document/d/1Fj4zsJviOPCirIySUfQ5_NP_MXln_DksvqC01742q78/edit">Spec (Stage 2) - Speaker Track modularisation + gst-switch integration</a></li>
+</ul>
+
+<!-- gst-switch References -->
+
+<!-- gst-switch (speaker track) -->
+
+<!-- HDMI2USB References -->
+
+<!-- Streaming System -->
+
+
+      </section>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
