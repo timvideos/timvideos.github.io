@@ -36,9 +36,11 @@
       <section>
 <h1 id="overview">Overview</h1>
 
-<p>Tim Videos is actually a number of <strong>different</strong> but related projects. There are a huge variety of ways to get started in a several different areas.</p>
+<p>TimVideos.us is a group of exciting projects which together create a system for doing both recording and live event streaming for conferences, meetings, user groups and other presentations. Check out our <a href="/Home.html">Getting Started!</a> page for more information!</p>
 
-<p>To help you decide which <strong>existing</strong> projects you might like to contribute to, we have created the following flow diagram:</p>
+<p>Whether you want to work hands-on with hardware or code in a variety of languages, we have a project for you. Join the team! This information should help you explore the projects and learn how to get started. </p>
+
+<p>To help you decide which of the TimVideos.us projects you wish to contribute to, we have created the following flow diagram:</p>
 
 <p><a href="https://docs.google.com/a/mithis.com/drawings/d/1zYlT69xQqbAjzuJgKj-UhO1vRF5JNLpic8xmPrfNtXM/edit">Edit Image</a></p>
 
@@ -75,39 +77,21 @@
 
 <p><strong>The following software projects have tasks that you can work on.</strong></p>
 
-<h2 id="gst-switch">gst-switch</h2>
-<p><a href="http://github.com/timvideos/gst-switch">(Code)</a> | <a href="https://groups.google.com/group/gst-switch">(Mailing List)</a> | <a href="irc://irc.freenode.org/#gst-switch">(IRC Channel)</a> | <a href="http://github.com/timvideos/gst-switch/issues">(Bug Tracker)</a></p>
+<h2 id="gst-switchgst-switchhtml"><a href="/gst-switch.html">gst-switch</a></h2>
 
 <ul>
   <li><a href="https://github.com/timvideos/getting-started/issues?labels=gst-switch">Tasks in the gst-switch project</a>.</li>
+  <li><a href="https://github.com/timvideos/getting-started/issues?labels=speakertrack">Tasks in the gst-switch project dealing with <strong>speaker tracking</strong></a>.</li>
 </ul>
 
-<p>gst-switch project is intended to be a replacement of <a href="http://dvswitch.alioth.debian.org/wiki/">DVswitch</a> based on <a href="http://gstreamer.freedesktop.org/">GStreamer</a>. It aims to do interactive live mixing of incoming video streams, and is designed to meet the needs of conference recording.</p>
-
-<blockquote>
-  <p>DVswitch is a digital video mixer intended for interactive live mixing of
-several incoming DV video streams. It was originally designed for the needs
-of DebConf; It has now been used for various other conferences, meetings and
-live musical performances.</p>
-</blockquote>
-
-<h4 id="gst-switch-is-written-in-c-and-uses-gstreamer">gst-switch is written in C and uses GStreamer</h4>
-
-<h2 id="speakertrack">speakertrack</h2>
-<p><em>Use the gst-switch, code repository, mailing lists and IRC channel.</em></p>
-
-<p>speakertrack is a set of extensions to gstreamer (described below) and gst-switch to allow automatic tracking of speakers using PTZ cameras rather then needing a camera operator. </p>
-
-<h4 id="speakertrack-is-written-in-c-and-uses-opencv">speakertrack is written in C and uses OpenCV</h4>
-
-<h2 id="streaming-system">Streaming System</h2>
+<h2 id="streaming-systemstreaming-systemhtml"><a href="/Streaming-System.html">Streaming System</a></h2>
 <p><a href="http://github.com/timvideos/streaming-system">(Code)</a> | <a href="irc://irc.freenode.org/#timvideos">(IRC Channel)</a> | <a href="http://github.com/timvideos/streaming-system/issues">(Bug Tracker)</a></p>
 
 <ul>
   <li><a href="https://github.com/timvideos/getting-started/issues?labels=website">Tasks in the <strong>Streaming System Website</strong> project</a></li>
 </ul>
 
-<p>Repository for deploying a live streaming system, consisting of a flumotion setup and website.</p>
+<p>Streaming-system is a comprehensive video conferencing package that allows users to set up and deploy a live streaming system. It includes a website, setup scripts and watchdog code.</p>
 
 <h4 id="the-streaming-system-including-a-django-based-website-shell-script-setup-scripts-and-python-watchdog-code">The streaming system including a django-based website, shell script setup scripts and Python watchdog code.</h4>
 
@@ -121,8 +105,7 @@ live musical performances.</p>
 
 <p><strong>The following hardware projects have tasks that you can work on.</strong></p>
 
-<h2 id="hdmi2usb">HDMI2USB</h2>
-<p><a href="http://github.com/timvideos/HDMI2USB.git">(Code)</a> | <a href="https://groups.google.com/group/hdmi2usb?hl=en-GB">(Mailing List)</a> | <a href="irc://irc.freenode.org/#hdmi2usb">(IRC Channel)</a> | <a href="http://github.com/timvideos/HDMI2USB/issues">(Bug Tracker)</a></p>
+<h2 id="hdmi2usbhdmi2usbhtml"><a href="/HDMI2USB.html">HDMI2USB</a></h2>
 
 <p>HDMI2USB is a core hardware project in the Tim Videos suite. There are two types of projects to work on with the HDMI2USB system;</p>
 
@@ -131,27 +114,13 @@ live musical performances.</p>
     <p>Firmware Projects - As the device uses a Xilinx Spartan 6 FPGA, developing much of the hardware is actually a process of developing software!<br /><a href="https://github.com/timvideos/HDMI2USB/wiki/Firmware">More information on current HDMI2USB firmware</a>.</p>
   </li>
   <li>
-    <p>Extension Boards - The Digilent ATLYS can be extended via the <a href="http://en.wikipedia.org/wiki/Very-high-density_cable_interconnect">VHDCI connector</a>.<br /><a href="">More information on existing HDMI2USB extension boards</a></p>
+    <p>Extension Boards - The Digilent ATLYS can be extended via the <a href="http://en.wikipedia.org/wiki/Very-high-density_cable_interconnect">VHDCI connector</a>.<br /><a href="https://github.com/timvideos/HDMI2USB/wiki/Getting-Started-with-an-Atlys-Board">More information on existing HDMI2USB extension boards</a></p>
   </li>
 </ul>
 
 <p style="font-size: 18px; color: red; text-align: center;">
-<strong>!!! All hardware projects will require you to have a Digilent ATLYS prototype board !!!</strong>
+<strong>!!! All hardware projects will require you to have a <a href="/HDMI2USB.html#digilent-atlys-prototype-board">Digilent ATLYS prototype board</a> !!!</strong>
 </p>
-
-<h3 id="digilent-atlys-prototype-board">Digilent ATLYS Prototype Board</h3>
-
-<p>For developing features for the HDMI2USB system we use a <a href="http://digilentinc.com/Products/Detail.cfm?NavPath=2,400,836&amp;Prod=ATLYS">Digilent ATLYS prototype board</a>.</p>
-
-<blockquote>
-  <p>The Atlys circuit board is a complete, ready-to-use digital circuit development platform
-based on a Xilinx Spartan 6 LX45 FPGA. The on-board collection of high-end peripherals,
-including Gbit Ethernet, HDMI Video, 128Mbyte DDR2 memory array, audio and USB ports make
-the Atlys board an ideal host for complete digital systems built around embedded
-processors like Xilinx’s MicroBlaze. Atlys is fully compatible with all Xilinx CAD tools,
-including ChipScope, EDK, and the free WebPack, so designs can be completed with no extra
-costs.</p>
-</blockquote>
 
 <p>If you can show that you are committed to developing hardware (such as being accepted into a program like Google Summer of Code), <strong>you can apply for a grant to have a board provided to you for development.</strong></p>
 
@@ -229,6 +198,8 @@ writing a simple plugin with a clean, generic interface.</p>
 
       </section>
     </div>
+    <div style="height: 2000px;">&nbsp;</div>
+    <div style="font-size: 8pt; text-align: center;">What you doing down here?</div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
   </body>
 </html>
