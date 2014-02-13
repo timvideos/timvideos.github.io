@@ -74,68 +74,101 @@
 <br />
 <br /></p>
 
-<h1 id="software-projects">Software Projects</h1>
+<div id="ideas"><h1>Loading ideas from GitHub ideas tracker...</h1></div>
 
-<p><strong>The following software projects have tasks that you can work on.</strong></p>
+<script type="text/html" id="ideas-template">
+    {{#projects}}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="project">
+        <h1>{{name}} <a href="https://github.com/timvideos/getting-started/issues?labels={{label.name}}"><img src="/images/link.png"></a></h1>
+        <div class="label" style="background-color: #{{label.color}};">
+            <a href="https://github.com/timvideos/getting-started/issues?labels={{label.name}}">
+                {{label.name}}
+            </a>
+        </div>
+        <div class="description">{{&body_html}}</div>
+        {{#ideas}}
+        <div id="{{number}}" class="idea {{hot}}">
+            <h3>{{title}}<a href="{{html_url}}"><img src="/images/link.png"></a></h3>
+            <div class="labels">
+                {{#labels}}
+                    <div class="label" style="background-color: #{{color}};">
+                        <a href="https://github.com/timvideos/getting-started/issues?labels={{name}}">
+                            {{name}}
+                        </a>
+                    </div>
+                {{/labels}}
+            </div>
+            <div class="description">
+                {{&body_html}}
+            </div>
+            <div class="extra_info">Loading further info...</div>
+        </div>
+        {{/ideas}}
+    </div>
+    {{/projects}}
+</script>
 
-<h2 id="gst-switchgst-switchhtml"><a href="/gst-switch.html">gst-switch</a></h2>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-<ul>
-  <li><a href="https://github.com/timvideos/getting-started/issues?labels=Project+-+gst-switch&amp;page=1&amp;state=open">Tasks in the gst-switch project</a>.</li>
-  <li><a href="">Tasks in the gst-switch project dealing with <strong>speaker tracking</strong></a>.</li>
-</ul>
+<script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js" type="text/javascript"></script>
 
-<h2 id="streaming-system">Streaming System</h2>
-<p><a href="http://github.com/timvideos/streaming-system">(Code)</a> | <a href="irc://irc.freenode.org/#timvideos">(IRC Channel)</a> | <a href="http://github.com/timvideos/streaming-system/issues">(Bug Tracker)</a></p>
+<script src="/js/ideas.js" type="text/javascript"></script>
 
-<ul>
-  <li><a href="https://github.com/timvideos/getting-started/issues?labels=Project+-+Streaming+System+%28Website%29&amp;page=1&amp;state=open">Tasks in the <strong>Streaming System Website</strong> project</a></li>
-</ul>
+<div style="display:none;">
 
-<p>Streaming-system is a comprehensive video conferencing package that allows users to set up and deploy a live streaming system. It includes a website, setup scripts and watchdog code.</p>
+  <div id="gst-switch">
+    <ul>
+      <li><a href="https://github.com/timvideos/getting-started/issues?labels=Project+-+gst-switch&amp;page=1&amp;state=open">Tasks in the gst-switch project</a>.</li>
+      <li><a href="">Tasks in the gst-switch project dealing with <strong>speaker tracking</strong></a>.</li>
+    </ul>
+  </div>
 
-<h4 id="the-streaming-system-including-a-django-based-website-shell-script-setup-scripts-and-python-watchdog-code">The streaming system including a django-based website, shell script setup scripts and Python watchdog code.</h4>
+  <div id="Streaming System (Website)">
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="http://github.com/timvideos/streaming-system">(Code)</a></td>
+          <td><a href="irc://irc.freenode.org/#timvideos">(IRC Channel)</a></td>
+          <td><a href="http://github.com/timvideos/streaming-system/issues">(Bug Tracker)</a></td>
+        </tr>
+      </tbody>
+    </table>
 
-<p><br />
-<br />
-<br />
-<br />
-<br /></p>
+    <ul>
+      <li><a href="https://github.com/timvideos/getting-started/issues?labels=Project+-+Streaming+System+%28Website%29&amp;page=1&amp;state=open">Tasks in the <strong>Streaming System Website</strong> project</a></li>
+    </ul>
 
-<h1 id="hardware-projects">Hardware Projects</h1>
+    <p>Streaming-system is a comprehensive video conferencing package that allows users to set up and deploy a live streaming system. It includes a website, setup scripts and watchdog code.</p>
 
-<p><strong>The following hardware projects have tasks that you can work on.</strong></p>
+    <h4 id="the-streaming-system-including-a-django-based-website-shell-script-setup-scripts-and-python-watchdog-code">The streaming system including a django-based website, shell script setup scripts and Python watchdog code.</h4>
+  </div>
 
-<h2 id="hdmi2usbhdmi2usbhtml"><a href="/HDMI2USB.html">HDMI2USB</a></h2>
+  <div id="HDMI2USB">
+    <p>HDMI2USB is a core hardware project in the Tim Videos suite. There are two types of projects to work on with the HDMI2USB system;</p>
 
-<p>HDMI2USB is a core hardware project in the Tim Videos suite. There are two types of projects to work on with the HDMI2USB system;</p>
+    <ul>
+      <li>
+        <p>Firmware Projects - As the device uses a Xilinx Spartan 6 FPGA, developing much of the hardware is actually a process of developing software!<br /><a href="https://github.com/timvideos/HDMI2USB/wiki/Firmware">More information on current HDMI2USB firmware</a>.</p>
+      </li>
+      <li>
+        <p>Extension Boards - The Digilent ATLYS can be extended via the <a href="http://en.wikipedia.org/wiki/Very-high-density_cable_interconnect">VHDCI connector</a>.<br /><a href="https://github.com/timvideos/HDMI2USB/wiki/Getting-Started-with-an-Atlys-Board">More information on existing HDMI2USB extension boards</a></p>
+      </li>
+    </ul>
 
-<ul>
-  <li>
-    <p>Firmware Projects - As the device uses a Xilinx Spartan 6 FPGA, developing much of the hardware is actually a process of developing software!<br /><a href="https://github.com/timvideos/HDMI2USB/wiki/Firmware">More information on current HDMI2USB firmware</a>.</p>
-  </li>
-  <li>
-    <p>Extension Boards - The Digilent ATLYS can be extended via the <a href="http://en.wikipedia.org/wiki/Very-high-density_cable_interconnect">VHDCI connector</a>.<br /><a href="https://github.com/timvideos/HDMI2USB/wiki/Getting-Started-with-an-Atlys-Board">More information on existing HDMI2USB extension boards</a></p>
-  </li>
-</ul>
-
-<p style="font-size: 18px; color: red; text-align: center;">
+    <p style="font-size: 18px; color: red; text-align: center;">
 <strong>!!! All hardware projects will require you to have a <a href="/HDMI2USB.html#digilent-atlys-prototype-board">Digilent ATLYS prototype board</a> !!!</strong>
 </p>
 
-<p>If you can show that you are committed to developing hardware (such as being accepted into a program like Google Summer of Code), <strong>you can apply for a grant to have a board provided to you for development.</strong></p>
+    <p>If you can show that you are committed to developing hardware (such as being accepted into a program like Google Summer of Code), <strong>you can apply for a grant to have a board provided to you for development.</strong></p>
 
-<h3 id="hdmi2usb-extension-boards-projects">HDMI2USB Extension Boards Projects</h3>
+  </div>
 
-<ul>
-  <li><a href="https://github.com/timvideos/getting-started/issues?labels=Project+-+HDMI2USB+%28Extension+Boards%29&amp;page=1&amp;state=open"><strong>HDMI2USB Extension Board</strong> related Tasks</a></li>
-</ul>
-
-<h3 id="hdmi2usb-firmware-projects">HDMI2USB Firmware Projects</h3>
-
-<ul>
-  <li><a href="https://github.com/timvideos/getting-started/issues?labels=Type+-+Firmware&amp;page=1&amp;state=open"><strong>HDMI2USB Firmware</strong> releated Tasks</a></li>
-</ul>
+</div>
 
 <p><br />
 <br />
