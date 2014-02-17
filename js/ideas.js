@@ -1,3 +1,25 @@
+function shift_headers(html, by) {
+  var dummy = $('<div>');
+  dummy.html(html);
+  for (var i = 6; i > 0; i--) {
+    var from = 'h'+i; // CSS selector
+
+    var to = '<h'+(i+by)+'>'; // HTML
+    if (i+by > 6) { // h6 is the smallest
+      to = '<b class=h'+(i+by)+'>';
+    }
+
+    dummy.find(from).replaceWith(function(){
+      return $(to).append($(this).contents());
+    });
+  }
+  return dummy;
+}
+
+
+var ideas_template = $('#ideas-template').html();
+var ideas_extra_template = $('#ideas-extra-template').html();
+
 $.ajax({
     type: "GET",
     url: "https://api.github.com/repos/timvideos/getting-started/issues",
@@ -22,20 +44,26 @@ $.ajax({
                 idea.reference = {
                     type: "issue",
                     repo: $.trim(issue_ref[1]),
-                    issue: $.trim(issue_ref[2]),
+                    number: $.trim(issue_ref[2]),
                 };
-                idea.reference.link = "https://github.com/timvideos/"+idea.reference.repo+"/issues/"+idea.reference.issue;
-                idea.reference.extra = Mustache.to_html('Loading extra information from <a href="{{link}}">{{repo}} bug #{{issue}}</a>', idea.reference);
+                idea.reference.url = "https://github.com/timvideos/"+idea.reference.repo+"/issues/"+idea.reference.number;
+                idea.reference.extra = Mustache.to_html('Loading extra information from <a href="{{url}}">{{repo}} bug #{{number}}</a>', idea.reference);
 
                 $.ajax({
                     type: "GET",
-                    url: "https://api.github.com/repos/timvideos/"+idea.reference.repo+"/issues/"+idea.reference.issue,
+                    url: "https://api.github.com/repos/timvideos/"+idea.reference.repo+"/issues/"+idea.reference.number,
                     dataType: "json",
                     headers: {
                         Accept: "application/vnd.github.full+json"
                     },
                 }).done(function (idea_extra_info) {
-                    $('#'+idea.number+' .extra_info').html(idea_extra_info.body_html);
+                    idea_extra_info.repo = idea.reference.repo;
+                    idea_extra_info.fixed_html = shift_headers(idea_extra_info.body_html, 3).html();
+
+                    var element = Mustache.to_html(ideas_extra_template, idea_extra_info);
+                    var target = $('#'+idea.number+' .extra_info');
+                    target.empty();
+                    target.append(element);
                 }).fail(function () {
                     $('#'+idea.number+' .extra_info').html("Unable to load extra info.");
                 });
@@ -49,6 +77,8 @@ $.ajax({
         }
         //console.log(idea.title, project_ref, issue_ref, idea.reference);
 
+        idea.fixed_html = shift_headers(idea.body_html, 2).html();
+
         $.each(idea.labels, function (j, label) {
             if (label == 'Hot') {
                 idea['hot'] = 'hot';
@@ -61,14 +91,13 @@ $.ajax({
                         name: label_project,
                         label: label,
                         ideas: [],
-                        body_html: $('div[id=\''+label_project+'\']').html(),
+                        fixed_html: $('div[id=\''+label_project+'\']').html(),
                     };
                 }
                 projects[label_project].ideas.push(idea);
             }
         });
     });
-    var template = $('#ideas-template').html();
 
     var projects_array = $.map(projects, function (v, k) {
         return v;
@@ -83,7 +112,7 @@ $.ajax({
         return 0;
     });
 
-    var output = Mustache.to_html(template, {'projects': projects_array});
+    var output = Mustache.to_html(ideas_template, {'projects': projects_array});
     //console.log(output);
     $('#ideas').html(output);
 }).fail(function () {
