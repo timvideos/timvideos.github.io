@@ -83,16 +83,33 @@
 
 <p>FIXME: Add a &#8220;create&#8221; link to automatically create a new idea prefilled with the following template.</p>
 
-<pre><code class="language-markdown">Title: [{{reference.repo}} #{{reference.number}}] {{title}}
-Labels: 
- * (fluro green) Language
- * (fluro light blue) Project
- * (dark yellow) Type
- * (dark blue) Dark blue
+<h4 id="title">Title</h4>
+<pre><code class="language-markdown">[{{reference.repo}} #{{reference.number}}] {{title}}
+</code></pre>
 
-Description:
-----
+<h4 id="labels">Labels</h4>
 
+<ul>
+  <li>
+    <div class="label" style="background-color: #02e10c;">(fluro green)</div>
+    <p>Language</p>
+  </li>
+  <li>
+    <div class="label" style="background-color: #02d7e1;">(fluro light blue)</div>
+    <p>Project</p>
+  </li>
+  <li>
+    <div class="label" style="background-color: #d7e102;">(dark yellow)</div>
+    <p>Type</p>
+  </li>
+  <li>
+    <div class="label" style="background-color: #5319e7;">(dark blue)</div>
+    <p>Difficulty</p>
+  </li>
+</ul>
+
+<h4 id="description">Description</h4>
+<pre><code class="language-markdown">
 More technical details at [Link to bug in the ](http://github.com/timvideos/{{reference.repo}}/issues/{{reference.number}})
 
 # Brief explanation
@@ -119,7 +136,6 @@ A much longer description of what the thing you want to do.
  * **Potential Mentors:** @{{github mentor username}}
  * **Mailing list:** [timvideos@groups.google.com](http://https://groups.google.com/forum/#!forum/timvideos/)
 
----
 </code></pre>
 
 <div style="display:none;">
