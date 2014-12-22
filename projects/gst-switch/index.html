@@ -1,40 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Tim Videos - Live Event Streaming - gst-switch</title>
-
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/pygment_trac.css">
-    <script src="js/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
+  <meta charset="utf-8">
+  <title>TimVideos.us Planet - Developers News</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="News, information, instructions and how to contribute">
+  <link rel="alternate" type="application/atom+xml" title="Tim Videos Planet Feed" href="/feed.xml" />
+  <link rel="canonical" href="http://code.timvideos.us/projects/gst-switch/">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/font-awesome.min.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
   <body>
     <div class="wrapper">
-      <header>
-        <img src="https://secure.gravatar.com/avatar/ed665fc30c4688bdf7a4d4040d2eebcc?s=160" width=160>
-        <h1 class="header">gst-switch</h1>
-        <p class="header">A modern Gstreamer based software video mixer</p>
-
-        <ul>
-<!--
-          <li class="download"><a class="buttons" href="https://github.com/timvideos/getting-started/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/timvideos/getting-started/tarball/master">Download TAR</a></li>
-  -->
-          <li><a class="buttons" href="Home.html">Getting Started</a></li>
-          <li><a class="buttons" href="Ideas.html">Ideas</a> (<a href="https://github.com/timvideos/getting-started/issues">Tracker</a>)</li>
-          <li><a class="buttons" href="People.html">People</a></li>
-
-        </ul>
-
-        <p class="header"><a class="header name" href="https://github.com/timvideos/getting-started/wiki/gst-switch/_edit">Edit</a></p> 
-
-      </header>
-      <section>
-<h1 id="gst-switch">gst-switch</h1>
+      <div class="box">
+        <div class="row">
+          <div class="column col-sm-3 col-md-3 col-lg-2" id="sidebar">
+  <a class="logo" href="/">
+    <img src="/img/logo.png" />
+    <span>DEV PAGE</span>
+  </a>
+  <ul class="nav">
+    <li class="active">
+      <a href="/home/">HOME</a>
+    </li>
+    <li class="">
+      <a href="/ideas/">IDEAS</a>
+    </li>
+    <li class="">
+      <a href="/people/">PEOPLE</a>
+    </li>
+    <li class="">
+      <a href="/news/">NEWS</a>
+    </li>
+    <li class="">
+      <a href="/summer-of-code/">SUMMER OF CODE</a>
+    </li>
+    <li class="">
+      <a href="/stats/">GITHUB STATISTICS</a>
+    </li>
+    <li class="">
+      <a href="/github/">GITHUB ACTIVITIES</a>
+    </li>
+  </ul>
+  <ul class="nav hidden-xs" id="sidebar-footer">
+    <li class="social">
+      <a href="http://planet.timvideos.us/feed.xml"><i class="fa fa-rss"></i></a>
+      <a href="http://www.twitter.com/TimVideosUs"><i class="fa fa-twitter"></i></a>
+    </li>
+    <li>
+      <span>Proudly hosted by <a id="github" href="http://www.github.com">GitHub</a>
+      </span>
+    </li>
+  </ul>
+</div>
+          <div class="column col-sm-9 col-md-9 col-lg-10" id="main">
+            <div class="padding">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+        <span class="edit-link pull-right">
+          <a href="http://editor.timvideos.us/#timvideos/website/edit/master/gst-switch.md" target="_blank">
+            <i class="fa fa-edit"></i>
+          </a>
+        </span>  
+      <div class="panel-body">
+        <h1 id="gst-switch">gst-switch</h1>
 
 <ul>
   <li><a href="http://github.com/timvideos/gst-switch">(Code)</a></li>
@@ -43,7 +78,7 @@
   <li><a href="http://github.com/timvideos/gst-switch/issues">(Bug Tracker)</a></li>
 </ul>
 
-<h4 id="gst-switch-is-written-in-c-and-uses-gstreamer">gst-switch is written in C and uses GStreamer</h4>
+<h3 id="gst-switch-is-written-in-c-and-uses-gstreamer">gst-switch is written in C and uses GStreamer</h3>
 
 <p>gst-switch is a software based system for interactive live mixing of incoming video streams, designed for the needs of conference recording.</p>
 
@@ -69,15 +104,16 @@ live musical performances.</p>
 
 <p>gst-switch project is intended to be a replacement of <a href="http://dvswitch.alioth.debian.org/wiki/">DVSwitch</a> based on <a href="http://gstreamer.freedesktop.org/">GStreamer</a>. It aims to do interactive live mixing of incoming video streams, designed for the needs of conference recording.</p>
 
-<h1 id="parts-of-gst-switch">Parts of gst-switch</h1>
+<hr />
 
-<h2 id="gst-switch-server">gst-switch server</h2>
+<h1 id="parts-of-gst-switch">Parts of gst-switch</h1>
+<p>### gst-switch server</p>
 
 <p>The gst-switch server is the part which actually does the real work. It accepts incoming video streams and then chooses one to output.  It also supports a limited number of ways to mix a maximum of 2 streams at once.</p>
 
 <p>The server has a constant stream output stream. This stream is well formed for a given format set on start (IE 720p60 or 1080p50 or similar). Both video output and audio output regardless of any problems in inputs (such as corruption or dropped frames) and even if no input streams remain.</p>
 
-<h2 id="gst-switch-gui">gst-switch gui</h2>
+<h3 id="gst-switch-gui">gst-switch gui</h3>
 
 <p>The user interface should be a program which connects to the gst-switch server and allows a user to configure features about the server.</p>
 
@@ -89,17 +125,19 @@ live musical performances.</p>
  * Lets you position the PIP in Option 2.
  * Lets you set the fade delay.</p>
 
-<h2 id="gst-switch-streamers">gst-switch streamers</h2>
+<h3 id="gst-switch-streamers">gst-switch streamers</h3>
 
 <p>Take data from a <a href="http://gstreamer.freedesktop.org/">GStreamer</a> pipeline and send it up to the gst-switch server.</p>
 
+<hr />
+
 <h1 id="speakertrack">speakertrack</h1>
 
-<h4 id="speakertrack-is-written-in-c-and-uses-opencv">speakertrack is written in C and uses OpenCV</h4>
+<h3 id="speakertrack-is-written-in-c-and-uses-opencv">speakertrack is written in C and uses OpenCV</h3>
 
 <p>speakertrack is a bunch of extensions to <a href="http://gstreamer.freedesktop.org/">GStreamer</a> and gst-switch to allow automatic tracking of speakers using PTZ cameras rather then needing a camera operator. </p>
 
-<h2 id="documents-1">Documents</h2>
+<h3 id="documents-1">Documents</h3>
 
 <ul>
   <li><a href="https://docs.google.com/a/mithis.com/document/d/1Fj4zsJviOPCirIySUfQ5_NP_MXln_DksvqC01742q78/edit">Spec (Stage 1) - Extend &#8220;facedetect&#8221; into speaker tracking</a></li>
@@ -115,10 +153,16 @@ live musical performances.</p>
 <!-- Streaming System -->
 
 
-      </section>
+      </div>
     </div>
-    <div style="height: 2000px;">&nbsp;</div>
-    <div style="font-size: 8pt; text-align: center;">What you doing down here?</div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
   </body>
 </html>

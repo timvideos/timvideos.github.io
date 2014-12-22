@@ -1,40 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Tim Videos - Live Event Streaming - Summer Of Code</title>
-
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/pygment_trac.css">
-    <script src="js/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
+  <meta charset="utf-8">
+  <title>TimVideos.us Planet - Developers News</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="News, information, instructions and how to contribute">
+  <link rel="alternate" type="application/atom+xml" title="Tim Videos Planet Feed" href="/feed.xml" />
+  <link rel="canonical" href="http://code.timvideos.us/summer-of-code/">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/font-awesome.min.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
   <body>
     <div class="wrapper">
-      <header>
-        <img src="https://secure.gravatar.com/avatar/ed665fc30c4688bdf7a4d4040d2eebcc?s=160" width=160>
-        <h1 class="header">Summer Of Code</h1>
-        <p class="header">Information for Google Summer of Code participants.</p>
-
-        <ul>
-<!--
-          <li class="download"><a class="buttons" href="https://github.com/timvideos/getting-started/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/timvideos/getting-started/tarball/master">Download TAR</a></li>
-  -->
-          <li><a class="buttons" href="Home.html">Getting Started</a></li>
-          <li><a class="buttons" href="Ideas.html">Ideas</a> (<a href="https://github.com/timvideos/getting-started/issues">Tracker</a>)</li>
-          <li><a class="buttons" href="People.html">People</a></li>
-
-        </ul>
-
-        <p class="header"><a class="header name" href="https://github.com/timvideos/getting-started/wiki/Summer-Of-Code/_edit">Edit</a></p> 
-
-      </header>
-      <section>
-<h1 id="prior-reading">Prior Reading</h1>
+      <div class="box">
+        <div class="row">
+          <div class="column col-sm-3 col-md-3 col-lg-2" id="sidebar">
+  <a class="logo" href="/">
+    <img src="/img/logo.png" />
+    <span>DEV PAGE</span>
+  </a>
+  <ul class="nav">
+    <li class="">
+      <a href="/home/">HOME</a>
+    </li>
+    <li class="">
+      <a href="/ideas/">IDEAS</a>
+    </li>
+    <li class="">
+      <a href="/people/">PEOPLE</a>
+    </li>
+    <li class="">
+      <a href="/news/">NEWS</a>
+    </li>
+    <li class="active">
+      <a href="/summer-of-code/">SUMMER OF CODE</a>
+    </li>
+    <li class="">
+      <a href="/stats/">GITHUB STATISTICS</a>
+    </li>
+    <li class="">
+      <a href="/github/">GITHUB ACTIVITIES</a>
+    </li>
+  </ul>
+  <ul class="nav hidden-xs" id="sidebar-footer">
+    <li class="social">
+      <a href="http://planet.timvideos.us/feed.xml"><i class="fa fa-rss"></i></a>
+      <a href="http://www.twitter.com/TimVideosUs"><i class="fa fa-twitter"></i></a>
+    </li>
+    <li>
+      <span>Proudly hosted by <a id="github" href="http://www.github.com">GitHub</a>
+      </span>
+    </li>
+  </ul>
+</div>
+          <div class="column col-sm-9 col-md-9 col-lg-10" id="main">
+            <div class="padding">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+        <span class="edit-link pull-right">
+          <a href="http://editor.timvideos.us/#timvideos/website/edit/master/Summer-Of-Code.md" target="_blank">
+            <i class="fa fa-edit"></i>
+          </a>
+        </span>  
+      <div class="panel-body">
+        <h1 id="prior-reading">Prior Reading</h1>
 
 <p>Firstly, <strong>please read the Google Summer of Code 
 <a href="http://en.flossmanuals.net/GSoCStudentGuide/">Student Manual</a></strong>. It contains a
@@ -47,6 +82,8 @@ It contains lots of helpful information about the program, specific deadlines
 and how things will run.</p>
 
 <p>Lastly, <strong>please read everything on this page</strong>. This page is designed to make your proposal <strong>better</strong>, by not reading everything you are already behind.</p>
+
+<hr />
 
 <h1 id="how-to-ask-for-help">How to ask for help</h1>
 
@@ -88,6 +125,8 @@ and how things will run.</p>
 
 <p>Often the best way to ask questions is to start writing your Google Summer of Code proposal as documented in the <a href="#writing-proposals">Writing Proposals</a> section and find out what areas you are getting stuck at.</p>
 
+<hr />
+
 <h1 id="frequency-asked-questions-faq">Frequency Asked Questions (FAQ)</h1>
 
 <h3 id="can-i-work-on-project-xxx">Can I work on project XXX?</h3>
@@ -117,8 +156,9 @@ Tell us about yourself.</p>
 
 <p>As developer time is limited, we ask everyone post their messages to the public mailing list or IRC channel (read http://www.catb.org/esr/faqs/smart-questions.html#noprivate for a more detailed explaination).</p>
 
-<h1 id="writing-proposals">Writing Proposals</h1>
+<hr />
 
+<h1 id="writing-proposals">Writing Proposals</h1>
 <p><strong>Feel free to submit multiple proposals.</strong></p>
 
 <p>The following links detail successful general ways to write a Summer of Code Proposal:</p>
@@ -270,13 +310,19 @@ their application was or was not accepted.</p>
   <li>Proposer is not a student. Google has specified this as a requirement of the GSoC program.</li>
 </ul>
 
+<hr />
+
 <h1 id="ideas">Ideas</h1>
 
-<p>You can find our ideas list on the <a href="/Ideas.html">Ideas!</a> page. The list is not definitive and any student is more than <strong>welcome to come up with their own idea</strong> to work on. <strong>Initiative is a skill which will rate highly</strong> when selecting projects. Feel free to come up with your own projects.</p>
+<p>You can find our ideas list on the <a href="/ideas/">Ideas!</a> page. The list is not definitive and any student is more than <strong>welcome to come up with their own idea</strong> to work on. <strong>Initiative is a skill which will rate highly</strong> when selecting projects. Feel free to come up with your own projects.</p>
+
+<hr />
 
 <h1 id="mentors">Mentors</h1>
 
-<p>Please see the <a href="/People.html">People</a> page.</p>
+<p>Please see the <a href="/people/">People</a> page.</p>
+
+<hr />
 
 <h1 id="where-to-ask-questions">Where to Ask Questions</h1>
 
@@ -284,6 +330,8 @@ their application was or was not accepted.</p>
   <li>Join the <a href="https://github.com/timvideos/getting-started/wiki#the-projects">mailing lists</a> for the projects you are interested in.</li>
   <li>Join the IRC chat channel <a href="irc://irc.freenode.org/#timvideos">#timvideos on irc.freenode.net</a>.</li>
 </ul>
+
+<hr />
 
 <h1 id="thanks">Thanks</h1>
 
@@ -304,10 +352,16 @@ their application was or was not accepted.</p>
 <!-- Streaming System -->
 
 
-      </section>
+      </div>
     </div>
-    <div style="height: 2000px;">&nbsp;</div>
-    <div style="font-size: 8pt; text-align: center;">What you doing down here?</div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
   </body>
 </html>

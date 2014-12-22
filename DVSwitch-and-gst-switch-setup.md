@@ -1,1 +1,0 @@
-While gst-switch is still in development you may want to run DVSwitch side-by-side to make sure recordings still happen when things go wrong.

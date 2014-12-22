@@ -1,56 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Tim Videos - Live Event Streaming - Getting Started!</title>
-
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/pygment_trac.css">
-    <script src="js/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
+  <meta charset="utf-8">
+  <title>TimVideos.us Planet - Developers News</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="News, information, instructions and how to contribute">
+  <link rel="alternate" type="application/atom+xml" title="Tim Videos Planet Feed" href="/feed.xml" />
+  <link rel="canonical" href="http://code.timvideos.us/home/">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/font-awesome.min.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
   <body>
     <div class="wrapper">
-      <header>
-        <img src="https://secure.gravatar.com/avatar/ed665fc30c4688bdf7a4d4040d2eebcc?s=160" width=160>
-        <h1 class="header">Getting Started!</h1>
-        <p class="header">How to start contributing to TimVideos.us</p>
+      <div class="box">
+        <div class="row">
+          <div class="column col-sm-3 col-md-3 col-lg-2" id="sidebar">
+  <a class="logo" href="/">
+    <img src="/img/logo.png" />
+    <span>DEV PAGE</span>
+  </a>
+  <ul class="nav">
+    <li class="active">
+      <a href="/home/">HOME</a>
+    </li>
+    <li class="">
+      <a href="/ideas/">IDEAS</a>
+    </li>
+    <li class="">
+      <a href="/people/">PEOPLE</a>
+    </li>
+    <li class="">
+      <a href="/news/">NEWS</a>
+    </li>
+    <li class="">
+      <a href="/summer-of-code/">SUMMER OF CODE</a>
+    </li>
+    <li class="">
+      <a href="/stats/">GITHUB STATISTICS</a>
+    </li>
+    <li class="">
+      <a href="/github/">GITHUB ACTIVITIES</a>
+    </li>
+  </ul>
+  <ul class="nav hidden-xs" id="sidebar-footer">
+    <li class="social">
+      <a href="http://planet.timvideos.us/feed.xml"><i class="fa fa-rss"></i></a>
+      <a href="http://www.twitter.com/TimVideosUs"><i class="fa fa-twitter"></i></a>
+    </li>
+    <li>
+      <span>Proudly hosted by <a id="github" href="http://www.github.com">GitHub</a>
+      </span>
+    </li>
+  </ul>
+</div>
+          <div class="column col-sm-9 col-md-9 col-lg-10" id="main">
+            <div class="padding">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+        <span class="edit-link pull-right">
+          <a href="http://editor.timvideos.us/#timvideos/website/edit/master/Home.md" target="_blank">
+            <i class="fa fa-edit"></i>
+          </a>
+        </span>  
+      <div class="panel-body">
+        <h1 id="welcome">Welcome</h1>
 
-        <ul>
-<!--
-          <li class="download"><a class="buttons" href="https://github.com/timvideos/getting-started/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/timvideos/getting-started/tarball/master">Download TAR</a></li>
-  -->
-          <li><a class="buttons" href="Home.html">Getting Started</a></li>
-          <li><a class="buttons" href="Ideas.html">Ideas</a> (<a href="https://github.com/timvideos/getting-started/issues">Tracker</a>)</li>
-          <li><a class="buttons" href="People.html">People</a></li>
+<p><strong>Welcome to TimVideos.us!</strong></p>
 
-        </ul>
+<p><strong>TimVideos.us</strong> is a <em>group</em> of exciting projects which together create a system for doing both <em>recording and live event streaming</em> for <strong>conferences</strong>, <strong>meetings</strong>, <strong>user groups</strong> and <strong>other</strong> presentations. </p>
 
-        <p class="header"><a class="header name" href="https://github.com/timvideos/getting-started/wiki/Home/_edit">Edit</a></p> 
-
-      </header>
-      <section>
-<h1 id="welcome">Welcome!</h1>
-
-<p>Welcome to TimVideos.us! </p>
-
-<p>TimVideos.us is a group of exciting projects which together create a system for doing both recording and live event streaming for conferences, meetings, user groups and other presentations. </p>
-
-<p>We hope that, through our projects, the costs and expertise currently required to produce live streaming events will be reduced to near zero. We wish to develop a system where everyone has the ability to record presentations and host live remote participants across the globe.</p>
+<p>We hope that, through our <em>projects</em>, the costs and expertise currently required to produce live streaming events will be reduced to near zero. We wish to develop a system where everyone has the ability to record presentations and host live remote participants across the globe.</p>
 
 <p>Whether you want to work hands-on with hardware or code in a variety of languages, we have a project for you. Join the team! This information should help you explore the projects and learn how to get started.</p>
 
+<hr />
+
 <h2 id="getting-started">Getting Started</h2>
 
-<p>Google Summer of Code (or similar project-based program) students should first head over to the <a href="/Summer-Of-Code.html">Summer Of Code</a> page and then head to our <a href="/Ideas.html">Ideas!</a> page.</p>
+<p>Google Summer of Code (or similar project-based program) students should first head over to the <a href="/summer-of-code/">Summer Of Code</a> page and then head to our <a href="/ideas/">Ideas!</a> page.</p>
 
-<p>If you are just interested in contributing and this is your first visit, head over to the <a href="/Ideas.html">Ideas!</a> page.</p>
+<p>If you are just interested in contributing and this is your first visit, head over to the <a href="/ideas/">Ideas!</a> page.</p>
 
 <p>If you have a Digilent Atlys Board, head over to the <a href="https://github.com/timvideos/HDMI2USB/wiki">HDMI2USB Wiki</a> and specifically look at the <a href="https://github.com/timvideos/HDMI2USB/wiki/Digilent-Atlys-Board%3A-Getting-Started">Digilent Atlys Board: Getting Started</a> page.</p>
+
+<hr />
 
 <h2 id="the-projects">The Projects</h2>
 
@@ -71,17 +110,17 @@
       <td>Parent project.</td>
     </tr>
     <tr>
-      <td><a href="/HDMI2USB.html">HDMI2USB</a></td>
+      <td><a href="/projects/hdmi2usb/">HDMI2USB</a></td>
       <td><a href="http://github.com/timvideos/HDMI2USB">(C)</a> <a href="https://groups.google.com/group/hdmi2usb?hl=en-GB">(M)</a> <a href="irc://irc.freenode.org/#hdmi2usb">(I)</a></td>
       <td>HDMI2USB is hardware for capturing HDMI, DVI and DisplayPort data. By capturing in high quality what is being presented locally it facilitates sharing with remote users and creates great recording for later viewing. The HDMI2USB hardware can also capture the HDMI output from cameras.</td>
     </tr>
     <tr>
-      <td><a href="/gst-switch.html">gst-switch</a></td>
+      <td><a href="/projects/gst-switch/">gst-switch</a></td>
       <td><a href="http://github.com/timvideos/gst-switch">(C)</a>&nbsp;<a href="https://groups.google.com/group/gst-switch">(M)</a>&nbsp;<a href="irc://irc.freenode.org/#gst-switch">(I)</a></td>
-      <td><a href="/gst-switch.html">gst-switch</a> aims to do interactive live mixing of incoming video streams, designed to meet the needs of conference recording. Designed as a flexible replacement for DVSwitch, and based around GStreamer.</td>
+      <td><a href="/projects/gst-switch/">gst-switch</a> aims to do interactive live mixing of incoming video streams, designed to meet the needs of conference recording. Designed as a flexible replacement for DVSwitch, and based around GStreamer.</td>
     </tr>
     <tr>
-      <td><a href="/gst-switch.html#speakertrack">speakertrack</a></td>
+      <td>speakertrack</td>
       <td><a href="http://github.com/timvideos/gst-switch">(C)</a></td>
       <td>Speakertrack is an extension to GStreamer and gst-switch to allow automatic tracking of speakers using remotely-operated PTZ cameras rather then relying on a camera operator.</td>
     </tr>
@@ -92,6 +131,8 @@
     </tr>
   </tbody>
 </table>
+
+<hr />
 
 <h3 id="partner-projects">Partner Projects</h3>
 
@@ -108,13 +149,13 @@
   </thead>
   <tbody>
     <tr>
-      <td><img src="http://www.flumotion.com/wp-content/uploads/favicon.png" class="favicon" /> <strong>flumotion</strong></td>
+      <td><img src="http://cdn2.hubspot.net/hub/313203/file-521910805-png/Layout/images/favicon.png" class="favicon" /> <strong>flumotion</strong></td>
       <td><a href="https://code.flumotion.com/cgit/">(C)</a> <a href="http://lists.fluendo.com/mailman/listinfo">(M)</a> <a href="irc://irc.freenode.org/#fluendo">(I)</a></td>
       <td>Flumotion is an award winning streaming software created in 2006 by a group of open source developers and multimedia experts. Flumotion Streaming Software allows broadcasters and companies to stream content live and on demand in all the leading formats from a single server.</td>
       <td>Used for live video streaming.</td>
     </tr>
     <tr>
-      <td><img src="http://gstreamer.freedesktop.org/images/favicon.png" class="favicon" /> <strong>gstreamer</strong></td>
+      <td><img src="http://gstreamer.freedesktop.org/planet/images/gstgotchi.png" class="favicon" /> <strong>gstreamer</strong></td>
       <td><a href="http://cgit.freedesktop.org/gstreamer">(C)</a> <a href="http://gstreamer.freedesktop.org/lists/">(M)</a> <a href="irc://irc.freenode.org/#gstreamer">(I)</a></td>
       <td>GStreamer is a library for constructing graphs of media-handling components. The applications it supports range from simple Ogg/Vorbis playback, audio/video streaming to complex audio (mixing) and video (non-linear editing) processing. Applications can take advantage of advances in codec and filter technology transparently. Developers can add new codecs and filters by writing a simple plugin with a clean, generic interface.</td>
       <td>Used by <strong>gst-switch</strong>, <strong>speakertrack</strong> and <strong>flumotion</strong>.</td>
@@ -137,10 +178,16 @@
 <!-- Streaming System -->
 
 
-      </section>
+      </div>
     </div>
-    <div style="height: 2000px;">&nbsp;</div>
-    <div style="font-size: 8pt; text-align: center;">What you doing down here?</div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
   </body>
 </html>
