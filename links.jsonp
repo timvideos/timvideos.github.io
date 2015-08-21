@@ -21,8 +21,18 @@ callback([
   },
 
   {
+    "text": "Streaming System",
+    "href": "/streaming-system/"
+  },
+
+  {
     "text": "GitHub Statistics",
     "href": "/stats/"
+  },
+
+  {
+    "text": "Projects",
+    "href": "/projects/"
   },
 
   {
@@ -47,7 +57,7 @@ callback([
 
   {
     "text": "HDMI2USB",
-    "href": "/projects/hdmi2usb/"
+    "href": "/hdmi2usb/"
   },
 
   {
