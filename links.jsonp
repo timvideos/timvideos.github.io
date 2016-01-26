@@ -73,6 +73,11 @@ callback([
   {
     "text": "DVSwitch and gst-switch",
     "href": "/dvswitch-and-gst-switch-setup/"
+  },
+
+  {
+    "text": "Contribute",
+    "href": "/contribute/"
   }
 
 
