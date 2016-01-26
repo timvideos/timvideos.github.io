@@ -46,11 +46,6 @@ callback([
   },
 
   {
-    "text": "Ideas!",
-    "href": "/ideas/"
-  },
-
-  {
     "text": "Getting Started",
     "href": "/home/"
   },
