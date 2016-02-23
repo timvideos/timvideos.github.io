@@ -85,137 +85,65 @@
         </div>
     </div>
 
-            <!--
+            <div class="padding">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+        <span class="edit-link pull-right">
+          <a href="https://editor.timvideos.us/#timvideos/website/edit/master/Contribute.md" target="_blank">
+            <i class="fa fa-edit"></i>
+          </a>
+        </span>  
+      <div class="panel-body">
+        <h1 id="projects">How can I contribute to TimVideos projects?</h1>
+<p>
+  Due to the TimVideos project being made up of 
+  <a href="/projects/">many smaller projects</a>, it can be tricky to figure
+  out what is a good idea to work on! To make it easier to figure out where
+  your efforts are best spent, we have a number of useful tools to help match
+  you to projects.
+</p>
+<p style="font-size: larger;">
+  <ul>
+   <li><a class="other" href="/contribute-diagram/">Project matching table</a></li>
+   <li><a class="other" href="/contribute-interactive/">Interactive project matching tool</a></li>
+  </ul>
+</p>
+<p>
+Once you have found a project you are interested in working on, go to the issue
+tracker for the project and look for bugs marked 
+<span class="good-first-bug">Good First Bug</span>. These bugs are simple
+enough that you should with some help be able try to fix them. 
+</p>
 
- If you modify this file, also modify the non-interactive version!
+<h2 id="contributing-via-university-or-other-programs">Contributing via University or other programs</h2>
 
- -->
+<p>The TimVideos project has a 
+<a href="https://github.com/timvideos/getting-started/issues">dedicated issue tracker</a>
+which contains tasks (both small and large) which are suitable for
+contributing as part of organised programs like;</p>
 
-<div class="padding">
-<div class="col-sm-12"><div class="panel panel-default">
-<div class="panel-body">
-<h1 id="projects">How can I contribute to TimVideos projects?</h1>
-<div>
-  Due to the TimVideos project being made up of <a href="/projects/">many
-  smaller projects</a>, it can be tricky to figure out what is a good idea to
-  work on. This page is designed to try and help match people to projects.
-</div><div style="font-size: larger;">
-  <a class="other" href="/contribute-diagram/">Find the non-interactive version here!</a>
-</div>
-
-</div>
-</div></div>
-</div>
-
-<div class="padding">
-<div class="col-sm-12"><div class="panel panel-default">
-<div class="panel-body">
-
-<link rel="stylesheet" type="text/css" href="../css/style.css" title="Default">
-<link rel="alternate stylesheet" type="text/css" href="../css/plain.css" title="Bird's Eye View">
-<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-<script>window.jQuery || document.write('<script src="jquery-1.11.2.min.js"><\/script>')</script>
-<script type="text/javascript" src="../js/foopy.js"></script>
-<script type="text/javascript" src="../js/l10n.js"></script>
-<link rel="resource" type="application/l10n" href="../js/locales.ini" />
-<script>
-$(document).ready(function() {
-$('#responses div').show();
-});
-</script>
-
-<div id="wrapper">
-
-<div class="group" id="hwsw">
-<span class="question" data-l10n-id="hwswquestion"></span>
-<ul class="choices">
-<li next-group="chips"><span data-l10n-id="chips"></span>
-<div class="extra" data-l10n-id="chips-extra"></div>
-</li>
-<li next-group="bits"><span data-l10n-id="bits"></span>
-<div class="extra" data-l10n-id="bits-extra"></div>
-</li>
+<ul>
+  <li><a href="https://code.timvideos.us/summer-of-code/">Google Summer of Code students</a>,</li>
+  <li>University Honors Projects, or</li>
+  <li>University Industry Placement/Intern programs.</li>
 </ul>
-</div>
 
-<div class="group" id="chips">
-<span class="question" data-l10n-id="chip-intro"></span>
-<ul class="choices">
-<li target="https://github.com/timvideos/getting-started/labels/Project%20-%20HDMI2USB%20%28Extension%20Boards%29" data-choice-id="real">Real
-<div class="extra" data-l10n-id="real-extra"></div>
-</li>
-<li target="https://github.com/timvideos/getting-started/labels/Project%20-%20HDMI2USB%20%28Extension%20Boards%29" data-choice-id="fake">Fake
-<div class="extra" data-l10n-id="fake-extra"></div>
-</li>
-</ul>
-</div>
+<p>We are very happy to work with students who wish to contribute to the TimVideos
+project as part of their university course work (and happy to fill out the
+required paper work).</p>
 
-<div class="group" id="bits">
-<span class="question" data-l10n-id="bits-intro"></span>
-<ul class="choices">
-<li next-group="c">C
-<div class="extra" data-l10n-id="c-extra"></div>
-</li>
-<li next-group="python">Python
-<div class="extra" data-l10n-id="python-extra"></div>
-</li>
-<li next-group="web">Web
-<div class="extra" data-l10n-id="web-extra"></div>
-</li>
-</ul>
-</div>
+<!-- gst-switch References -->
 
-<div class="group" id="python">
-<span class="question" data-l10n-id="python-intro"></span>
-<ul class="choices">
-<li target="https://github.com/timvideos/getting-started/labels/Project%20-%20Flumotion" data-choice-id="flumotin">Flumotion
-<div class="extra" data-l10n-id="flumotion-extra"></div>
-</li>
-<li target="https://github.com/timvideos/getting-started" data-choice-id="streaming">Streaming Support
-<div class="extra" data-l10n-id="streaming-extra"></div>
-</li>
-</ul>
-</div>
+<!-- gst-switch (speaker track) -->
 
-<div class="group" id="web">
-<span class="question" data-l10n-id="web-intro"></span>
-<ul class="choices">
-<li target="https://github.com/timvideos/getting-started/labels/Project%20-%20Streaming%20System%20%28Website%29" data-choice-id="streaming" data-ok-id="more1">Streaming Website
-<div class="extra" data-l10n-id="streaming-extra"></div>
-</li>
-</ul>
-</div>
+<!-- HDMI2USB References -->
 
-<div class="group" id="c">
-<span class="question" data-l10n-id="c-intro"></span>
-<ul class="choices">
-<li target="https://github.com/timvideos/getting-started/labels/Project%20-%20gst-switch" data-choice-id="gst">gst-switch
-<div class="extra" data-l10n-id="gst-extra"></div>
-</li>
-<li target="https://github.com/timvideos/getting-started/labels/Project%20-%20gstreamer" data-choice-id="gstreamer">gstreamer
-<div class="extra" data-l10n-id="gstreamer-extra"></div>
-</li>
-</ul>
-</div>
+<!-- Streaming System -->
 
 
-<div id="responses">
-<div id="ok"><a href="javascript:" data-l10n-id="more"></a></div>
-<div id="next">
-<a href="javascript:">
-<span data-l10n-id="negative1" class="negative"></span>
-<span data-l10n-id="negative2" class="negative"></span>
-<span data-l10n-id="negative3" class="negative"></span>
-<span data-l10n-id="negative4" class="negative"></span>
-<span data-l10n-id="negative5" class="negative"></span>
-<span data-l10n-id="negative6" class="negative"></span>
-</a>
-</div>
-<div id="back"><a href="javascript:" data-l10n-id="back"></a></div>
-</div>
-<div id="footer" data-l10n-id="credits"></div>
-</div>
-</div>
+      </div>
+    </div>
+  </div>
 </div>
 
           </div>

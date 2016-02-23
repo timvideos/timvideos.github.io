@@ -77,6 +77,11 @@ callback([
 
   {
     "text": "Contribute",
+    "href": "/contribute-interactive/"
+  },
+
+  {
+    "text": "Contribute",
     "href": "/contribute-diagram/"
   }
 
