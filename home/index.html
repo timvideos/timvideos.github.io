@@ -40,7 +40,7 @@
     </li>
     <li class="">
      <ul>
-      <li><a href="/projects/gst-switch/">gst-switch</a></li>
+      <li><a href="/projects/voctomix/">voctomix</a></li>
      </ul>
     </li>
     <li class="">
@@ -104,7 +104,7 @@
 
 <p>If you are just interested in contributing and this is your first visit, head over to the <a href="/contribute-diagram/">Contribute</a> page.</p>
 
-<p>If you have a Digilent Atlys Board, head over to the <a href="https://github.com/timvideos/HDMI2USB/wiki">HDMI2USB Wiki</a> and specifically look at the <a href="https://github.com/timvideos/HDMI2USB/wiki/Digilent-Atlys-Board%3A-Getting-Started">Digilent Atlys Board: Getting Started</a> page.</p>
+<p>If you are interested in our open source hardware, head over to the <a href="https://hdmi2usb.tv">HDMI2USB</a> website.</p>
 
 <hr />
 
@@ -132,19 +132,14 @@
       <td>HDMI2USB is hardware for capturing HDMI, DVI and DisplayPort data. By capturing in high quality what is being presented locally it facilitates sharing with remote users and creates great recording for later viewing. The HDMI2USB hardware can also capture the HDMI output from cameras.</td>
     </tr>
     <tr>
-      <td><a href="/projects/gst-switch/">gst-switch</a></td>
-      <td><a href="https://github.com/timvideos/gst-switch">(C)</a>&nbsp;<a href="https://groups.google.com/group/gst-switch">(M)</a>&nbsp;<a href="irc://irc.freenode.org/#gst-switch">(I)</a></td>
-      <td><a href="/projects/gst-switch/">gst-switch</a> aims to do interactive live mixing of incoming video streams, designed to meet the needs of conference recording. Designed as a flexible replacement for DVSwitch, and based around GStreamer.</td>
-    </tr>
-    <tr>
-      <td>speakertrack</td>
-      <td><a href="https://github.com/timvideos/gst-switch">(C)</a></td>
-      <td>Speakertrack is an extension to GStreamer and gst-switch to allow automatic tracking of speakers using remotely-operated PTZ cameras rather then relying on a camera operator.</td>
-    </tr>
-    <tr>
       <td><a href="https://github.com/timvideos/streaming-system">Streaming System</a></td>
       <td><a href="https://github.com/timvideos/streaming-system">(C)</a> <a href="https://groups.google.com/group/timvideos">(M)</a> <a href="irc://irc.freenode.org/#timvideos">(I)</a></td>
       <td>Streaming-system is a comprehensive video conferencing package that allows users to set up and deploy a live streaming system. It includes a website, setup scripts and watchdog code.</td>
+    </tr>
+    <tr>
+      <td><a href="/projects/voctomix/">voctomix</a></td>
+      <td><a href="https://github.com/voc/voctomix">(C)</a>&nbsp;<a href="https://groups.google.com/group/timvideos">(M)</a>&nbsp;<a href="irc://irc.hackint.eu/#voctomix">(I)</a></td>
+      <td><a href="/projects/voctomix/">voctomix</a> aims to do interactive live mixing of incoming video streams, designed to meet the needs of conference recording. Designed as a flexible replacement for DVSwitch using Gstreamer and based on the original <a href="/projects/gst-switch/">gst-switch</a> design.</td>
     </tr>
   </tbody>
 </table>
@@ -173,13 +168,40 @@
       <td><img src="http://gstreamer.freedesktop.org/planet/images/gstgotchi.png" class="favicon" /> <strong>gstreamer</strong></td>
       <td><a href="http://cgit.freedesktop.org/gstreamer">(C)</a> <a href="http://gstreamer.freedesktop.org/lists/">(M)</a> <a href="irc://irc.freenode.org/#gstreamer">(I)</a></td>
       <td>GStreamer is a library for constructing graphs of media-handling components. The applications it supports range from simple Ogg/Vorbis playback, audio/video streaming to complex audio (mixing) and video (non-linear editing) processing. Applications can take advantage of advances in codec and filter technology transparently. Developers can add new codecs and filters by writing a simple plugin with a clean, generic interface.</td>
-      <td>Used by <strong>gst-switch</strong>, <strong>speakertrack</strong> and <strong>flumotion</strong>.</td>
+      <td>Used by <strong>voctomix</strong> and <strong>flumotion</strong>.</td>
     </tr>
     <tr>
-      <td><strong>eventstreamer</strong></td>
-      <td><a href="https://github.com/lukejohnosmahi/eventstreamr">(C)</a></td>
-      <td>EventStreamer is a single and multi room audio visual stream management. It is designed to scale down for a single monthly LUG talk and scale up for conferences such as linux.conf.au. The base OS image forms the foundation for eventstreamr. The goals are simple: every host has the base image installed, the base image includes all software required to perform all roles and simple setup script to go from imaged to production.</td>
-      <td>Used by <strong>linux.conf.au 2014</strong> and <strong><a href="http://plug.org.au">PLUG</a></strong>.</td>
+      <td><strong>axiom</strong></td>
+      <td><a href="https://github.com/apertus-open-source-cinema">(C)</a> <a href="https://www.apertus.org/mailinglists">(M)</a> <a href="irc://irc.freenode.org/#apertus">(I)</a></td>
+      <td>The goal of the global community-driven apertus° project is to create a variety of powerful, affordable, free (in terms of liberty), sustainable and open digital cinema tools that we as filmmakers love to use. The AXIOM product line is the result of this ongoing endeavor and after successful crowd funding and receiving an EU Innovation grant is well on track to redefine the industry well beyond the DIY garages and hobbyist labs the project started in. Hollywood has discovered the AXIOM as the first chance to reclaim control of the tools and therefore cinematography.</td>
+      <td>&#160;</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="deprecated-projects">Deprecated Projects</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th><small>(C)ode<br />(M)ailing&nbsp;List<br />(I)RC</small></th>
+      <th>Description</th>
+      <th>Used By</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/projects/gst-switch/">gst-switch</a></td>
+      <td><a href="https://github.com/timvideos/gst-switch">(C)</a>&nbsp;<a href="https://groups.google.com/group/gst-switch">(M)</a>&nbsp;<a href="irc://irc.freenode.org/#gst-switch">(I)</a></td>
+      <td><a href="/projects/gst-switch/">gst-switch</a> aims to do interactive live mixing of incoming video streams, designed to meet the needs of conference recording. Designed as a flexible replacement for DVSwitch, and based around GStreamer.</td>
+      <td>&#160;</td>
+    </tr>
+    <tr>
+      <td>speakertrack</td>
+      <td><a href="https://github.com/timvideos/gst-switch">(C)</a></td>
+      <td>Speakertrack is an extension to GStreamer and gst-switch to allow automatic tracking of speakers using remotely-operated PTZ cameras rather then relying on a camera operator.</td>
+      <td>&#160;</td>
     </tr>
   </tbody>
 </table>

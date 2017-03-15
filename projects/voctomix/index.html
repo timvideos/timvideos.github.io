@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="News, information, instructions and how to contribute">
   <link rel="alternate" type="application/atom+xml" title="Tim Videos Planet Feed" href="/feed.xml" />
-  <link rel="canonical" href="https://code.timvideos.us/projects/gst-switch/">
+  <link rel="canonical" href="https://code.timvideos.us/projects/voctomix/">
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/font-awesome.min.css" rel="stylesheet">
   <!--[if lt IE 9]>
@@ -38,7 +38,7 @@
       <li><a href="/hdmi2usb/">HDMI2USB</a></li>
      </ul>
     </li>
-    <li class="">
+    <li class="active">
      <ul>
       <li><a href="/projects/voctomix/">voctomix</a></li>
      </ul>
@@ -81,30 +81,33 @@
   <div class="col-sm-12">
     <div class="panel panel-default">
         <span class="edit-link pull-right">
-          <a href="https://editor.timvideos.us/#timvideos/website/edit/master/gst-switch.md" target="_blank">
+          <a href="https://editor.timvideos.us/#timvideos/website/edit/master/voctomix.md" target="_blank">
             <i class="fa fa-edit"></i>
           </a>
         </span>  
       <div class="panel-body">
-        <div style="width:100%; font-size: 32px; font-weight: bold; text-align: center; margin: 30px; font-color: red;">
-gst-switch has been deprecated in favor of <a href="/projects/voctomix/">voctomix</a>.<br />
-All development effort is now going into <a href="/projects/voctomix/">voctomix</a>.
-</div>
-
-<h1 id="gst-switch">gst-switch</h1>
+        <h1 id="voctomix">voctomix</h1>
 
 <ul>
-  <li><a href="http://github.com/timvideos/gst-switch">(Code)</a></li>
-  <li><a href="https://groups.google.com/group/gst-switch">(Mailing List)</a></li>
-  <li><a href="irc://irc.freenode.org/#gst-switch">(IRC Channel)</a></li>
-  <li><a href="http://github.com/timvideos/gst-switch/issues">(Bug Tracker)</a></li>
+  <li><a href="http://github.com/voc/voctomix">(Code) - Main Repo</a></li>
+  <li><a href="https://github.com/CarlFK/voctomix-outcasts">(Code) - Extension Scripts</a></li>
+  <li><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#118;&#111;&#099;&#064;&#099;&#051;&#118;&#111;&#099;&#046;&#100;&#101;">(Mailing List)</a></li>
+  <li><a href="irc://irc.hackint.net/#voctomix">(IRC Channel)</a></li>
+  <li><a href="http://github.com/voc/voctomix/issues">(Bug Tracker)</a></li>
 </ul>
 
-<h3 id="gst-switch-is-written-in-c-and-uses-gstreamer">gst-switch is written in C and uses GStreamer</h3>
+<h3 id="voctomix-is-written-in-python-and-uses-gstreamer">voctomix is written in Python and uses GStreamer</h3>
 
-<p>gst-switch is a software based system for interactive live mixing of incoming video streams, designed for the needs of conference recording.</p>
+<p>voctomix is a software based system for interactive live mixing of incoming video streams, designed for the needs of conference recording.</p>
+
+<p>voctomix was <a href="https://c3voc.de/">developed by the C3VOC</a> and is used extensively by the TimVideos project. The design was originally heavily influenced by the original <a href="/projects/gst-switch/">gst-switch</a> design but is instead written in Python.</p>
+
+<p>**</p>
 
 <h3 id="functional-diagram">Functional diagram</h3>
+
+<p>FIXME: This diagram is for gst-switch, voctomix is similar in design but has some differences!</p>
+
 <p><a href="https://docs.google.com/a/mithis.com/drawings/d/18sU5uECrPgQzxLWzc7RaYWRs9F3aocx0chf16-yxBEY/edit">Edit</a></p>
 
 <p><img src="https://docs.google.com/drawings/d/18sU5uECrPgQzxLWzc7RaYWRs9F3aocx0chf16-yxBEY/pub?w=1874&amp;h=971" style="width: 100%;" /></p>
@@ -112,10 +115,14 @@ All development effort is now going into <a href="/projects/voctomix/">voctomix<
 <h3 id="documents">Documents</h3>
 
 <ul>
+  <li><a href="https://github.com/voc/voctomix/blob/master/voctocore/README.md">voctomix - voctocore documentation</a></li>
+  <li>
+    <p><a href="https://github.com/voc/voctomix/blob/master/voctogui/README.md">voctomix - voctogui documentation</a></p>
+  </li>
   <li><a href="https://docs.google.com/a/mithis.com/document/d/1_blj8u6ToyaZwdikCmUSGFwdpoAYNCyDYEHgXtPL8mI/edit#heading=h.bhhck1xjratt">gst-switch design document</a></li>
 </ul>
 
-<h3 id="dvswitch-and-gst-switch">DVSwitch and gst-switch</h3>
+<h3 id="dvswitch-and-voctomix">DVSwitch and voctomix</h3>
 
 <blockquote>
   <p>DVSwitch is a digital video mixer intended for interactive live mixing of
@@ -124,18 +131,29 @@ of DebConf; It has now been used for various other conferences, meetings and
 live musical performances.</p>
 </blockquote>
 
-<p>gst-switch project is intended to be a replacement of <a href="http://dvswitch.alioth.debian.org/wiki/">DVSwitch</a> based on <a href="http://gstreamer.freedesktop.org/">GStreamer</a>. It aims to do interactive live mixing of incoming video streams, designed for the needs of conference recording.</p>
+<p>voctomix project is intended to be a replacement of <a href="http://dvswitch.alioth.debian.org/wiki/">DVSwitch</a> based on <a href="http://gstreamer.freedesktop.org/">GStreamer</a>. It aims to do interactive live mixing of incoming video streams, designed for the needs of conference recording.</p>
 
 <hr />
 
-<h1 id="parts-of-gst-switch">Parts of gst-switch</h1>
-<p>### gst-switch server</p>
+<p><img src="https://raw.githubusercontent.com/voc/voctomix/master/voctogui/voctomix.png" /></p>
 
-<p>The gst-switch server is the part which actually does the real work. It accepts incoming video streams and then chooses one to output.  It also supports a limited number of ways to mix a maximum of 2 streams at once.</p>
+<h1 id="parts-of-voctomix">Parts of voctomix</h1>
+
+<h3 id="voctocore">voctocore</h3>
+
+<ul>
+  <li><a href="https://github.com/voc/voctomix/tree/master/voctocore">(Code) - Main Repo</a></li>
+</ul>
+
+<p>voctocore is the part which actually does the real work. It accepts incoming video streams and then chooses one to output.  It also supports a limited number of ways to mix a maximum of 2 streams at once.</p>
 
 <p>The server has a constant stream output stream. This stream is well formed for a given format set on start (IE 720p60 or 1080p50 or similar). Both video output and audio output regardless of any problems in inputs (such as corruption or dropped frames) and even if no input streams remain.</p>
 
-<h3 id="gst-switch-gui">gst-switch gui</h3>
+<h3 id="voctogui">voctogui</h3>
+
+<ul>
+  <li><a href="https://github.com/voc/voctomix/tree/master/voctogui">(Code) - Main Repo</a></li>
+</ul>
 
 <p>The user interface should be a program which connects to the gst-switch server and allows a user to configure features about the server.</p>
 
@@ -147,24 +165,13 @@ live musical performances.</p>
  * Lets you position the PIP in Option 2.
  * Lets you set the fade delay.</p>
 
-<h3 id="gst-switch-streamers">gst-switch streamers</h3>
-
-<p>Take data from a <a href="http://gstreamer.freedesktop.org/">GStreamer</a> pipeline and send it up to the gst-switch server.</p>
-
-<hr />
-
-<h1 id="speakertrack">speakertrack</h1>
-
-<h3 id="speakertrack-is-written-in-c-and-uses-opencv">speakertrack is written in C and uses OpenCV</h3>
-
-<p>speakertrack is a bunch of extensions to <a href="http://gstreamer.freedesktop.org/">GStreamer</a> and gst-switch to allow automatic tracking of speakers using PTZ cameras rather then needing a camera operator. </p>
-
-<h3 id="documents-1">Documents</h3>
+<h3 id="vocto-outcasts">vocto-outcasts</h3>
 
 <ul>
-  <li><a href="https://docs.google.com/a/mithis.com/document/d/1Fj4zsJviOPCirIySUfQ5_NP_MXln_DksvqC01742q78/edit">Spec (Stage 1) - Extend &#8220;facedetect&#8221; into speaker tracking</a></li>
-  <li><a href="https://docs.google.com/a/mithis.com/document/d/1Fj4zsJviOPCirIySUfQ5_NP_MXln_DksvqC01742q78/edit">Spec (Stage 2) - Speaker Track modularisation + gst-switch integration</a></li>
+  <li><a href="https://github.com/CarlFK/voctomix-outcasts">(Code) - Extension Scripts</a></li>
 </ul>
+
+<p>vocto-outcasts are extra scripts for interfacing with voctocore. They allow capture from multiple different types of video sources.</p>
 
 <!-- gst-switch References -->
 
