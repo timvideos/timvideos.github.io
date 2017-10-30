@@ -11,6 +11,11 @@ callback([
   },
 
   {
+    "text": "Code of Conduct",
+    "href": "/conduct/"
+  },
+
+  {
     "text": "gst-switch",
     "href": "/projects/gst-switch/"
   },
@@ -33,6 +38,11 @@ callback([
   {
     "text": "GitHub Statistics",
     "href": "/stats/"
+  },
+
+  {
+    "text": "Code of Conduct - Reporting Guide",
+    "href": "/conduct/reporting/"
   },
 
   {
