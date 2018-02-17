@@ -27,33 +27,47 @@
     <span>DEV PAGE</span>
   </a>
   <ul class="nav">
+
     <li class="">
       <a href="/home/">HOME</a>
     </li>
+
+    <li class="">
+      <a href="/summer-of-code/">SUMMER OF CODE</a>
+    </li>
+
     <li class="active">
       <a href="/projects/">PROJECTS</a>
     </li>
+
     <li class="">
      <ul>
       <li><a href="/hdmi2usb/">HDMI2USB</a></li>
      </ul>
     </li>
+
     <li class="">
      <ul>
       <li><a href="/projects/voctomix/">voctomix</a></li>
      </ul>
     </li>
+
+    <!--
     <li class="">
      <ul>
       <li><a href="/streaming-system/">Streaming System</a></li>
      </ul>
     </li>
+    -->
+
     <li class="">
       <a href="/contribute/">CONTRIBUTE</a>
     </li>
+
     <li class="">
       <a href="/conduct/">CONDUCT</a></li>
     </li>
+
     <li class="">
      <ul>
       <li><a href="/conduct/reporting/">Reporting</a></li>
@@ -64,25 +78,30 @@
     <li class="">
       <a href="/people/">PEOPLE</a>
     </li>
+
     <li class="">
       <a href="/news/">NEWS</a>
     </li>
+
     <li class="">
-      <a href="/summer-of-code/">SUMMER OF CODE</a>
-    </li>
-    <li class="">
-      <a href="https://github.com/timvideos">GITHUB</a>
-    </li>
+      <a href="https://github.com/timvideos">REPOS</a> </li>
+
   </ul>
+
   <ul class="nav hidden-xs" id="sidebar-footer">
+
     <li class="social">
       <a href="https://planet.timvideos.us/feed.xml"><i class="fa fa-rss"></i></a>
       <a href="https://www.twitter.com/TimVideosUs"><i class="fa fa-twitter"></i></a>
     </li>
+
+    <!--
     <li>
       <span>Proudly hosted by <a id="github" href="https://github.com">GitHub</a>
       </span>
     </li>
+    -->
+
   </ul>
 </div>
 
@@ -98,8 +117,6 @@
       <div class="panel-body">
         <h1 id="projects">Projects</h1>
 
-<p><img style="width: 100%;" src="/img/TimVideosSetup.png" /></p>
-
 <table>
   <thead>
     <tr>
@@ -112,12 +129,60 @@
     <tr>
       <td><img src="https://code.timvideos.us/favicon.ico" class="favicon" /> <strong>TimVideos.us</strong></td>
       <td><a href="https://github.com/timvideos">(C)</a> <a href="https://groups.google.com/group/timvideos">(M)</a> <a href="irc://irc.freenode.org/#timvideos">(I)</a></td>
-      <td>Parent project.</td>
+      <td>Parent project.  The organazation that maintains and works with these projects.</td>
     </tr>
     <tr>
-      <td><a href="/hdmi2usb/">HDMI2USB</a></td>
+      <td><strong><a href="/hdmi2usb/">HDMI2USB</a></strong></td>
       <td><a href="https://github.com/timvideos/HDMI2USB">(C)</a> <a href="https://groups.google.com/group/hdmi2usb?hl=en-GB">(M)</a> <a href="irc://irc.freenode.org/#hdmi2usb">(I)</a></td>
       <td>HDMI2USB is hardware for capturing HDMI, DVI and DisplayPort data. By capturing in high quality what is being presented locally it facilitates sharing with remote users and creates great recording for later viewing. The HDMI2USB hardware can also capture the HDMI output from cameras.</td>
+    </tr>
+    <tr>
+      <td><strong><a href="https://github.com/timvideos/streaming-system">Streaming System</a></strong></td>
+      <td><a href="https://github.com/timvideos/streaming-system">(C)</a> <a href="https://groups.google.com/group/timvideos">(M)</a> <a href="irc://irc.freenode.org/#timvideos">(I)</a></td>
+      <td>Streaming-system is a comprehensive video conferencing package that allows users to set up and deploy a live streaming system. It includes a website, setup scripts and watchdog code.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="partner-projects">Partner Projects</h1>
+
+<p>Projects not developed by TimVideos.us, but extensively used by us.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong><a href="https://www.qemu.org">QEMU</a></strong></td>
+      <td><a href="https://github.com/timvideos/qemu-litex">(C)</a></td>
+      <td>QEMU is a generic and open source machine &amp; userspace emulator and virtualizer.  People are able to write new features for the <a href="https://github.com/timvideos/HDMI2USB-misoc-firmware/tree/master/firmware">HDMI2USB firmware</a> and develop <a href="https://github.com/upy-fpga">MicroPython for FPGAs</a> using QEmu.</td>
+    </tr>
+    <tr>
+      <td><strong>DC-V Playbooks</strong></td>
+      <td><a href="https://salsa.debian.org/debconf-video-team/ansible">(C)</a></td>
+      <td>Ansible playbooks for the DebConf Video Team&#8217;s machines. Installs and configures all the things. <a href="https://debconf-video-team.pages.debian.net/docs/ansible.html">(Docs)</a></td>
+    </tr>
+    <tr>
+      <td><img src="http://gstreamer.freedesktop.org/planet/images/gstgotchi.png" class="favicon" /> <strong><a href="https://gstreamer.freedesktop.org">gstreamer</a></strong></td>
+      <td><a href="http://cgit.freedesktop.org/gstreamer">(C)</a> <a href="http://gstreamer.freedesktop.org/lists/">(M)</a> <a href="irc://irc.freenode.org/#gstreamer">(I)</a></td>
+      <td>GStreamer is a library for constructing graphs of media-handling components. The applications it supports range from simple Ogg/Vorbis playback, audio/video streaming to complex audio (mixing) and video (non-linear editing) processing. Applications can take advantage of advances in codec and filter technology transparently. Developers can add new codecs and filters by writing a simple plugin with a clean, generic interface.</td>
+    </tr>
+    <tr>
+      <td><strong>Veyepar</strong></td>
+      <td><a href="https://github.com/CarlFK/veyepar">(C)</a></td>
+      <td>Video Eyeball Processor and Review.  Video production workflow manager.  Import conference schedule, create run sheets, import raw video files,  web based UI to create cut lists, transcode, upload, announce on social media.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="deprecated-projects">Deprecated Projects</h1>
+
+<p>Projects once developed by TimVideos.us, but are no longer maitained.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>flumotion</td>
+      <td><a href="https://code.flumotion.com/cgit/">(C)</a> <a href="http://lists.fluendo.com/mailman/listinfo">(M)</a> <a href="irc://irc.freenode.org/#fluendo">(I)</a></td>
+      <td>Flumotion is an award winning streaming software created in 2006 by a group of open source developers and multimedia experts. Flumotion Streaming Software allows broadcasters and companies to stream content live and on demand in all the leading formats from a single server.</td>
     </tr>
     <tr>
       <td><a href="/projects/gst-switch/">gst-switch</a></td>
@@ -130,44 +195,9 @@
       <td>Speakertrack is an extension to GStreamer and gst-switch to allow automatic tracking of speakers using remotely-operated PTZ cameras rather then relying on a camera operator.</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/timvideos/streaming-system">Streaming System</a></td>
-      <td><a href="https://github.com/timvideos/streaming-system">(C)</a> <a href="https://groups.google.com/group/timvideos">(M)</a> <a href="irc://irc.freenode.org/#timvideos">(I)</a></td>
-      <td>Streaming-system is a comprehensive video conferencing package that allows users to set up and deploy a live streaming system. It includes a website, setup scripts and watchdog code.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h1 id="partner-projects">Partner Projects</h1>
-
-<p>Projects not developed by TimVideos.us, but extensively used by us.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th><small>(C)ode<br />(M)ailing&nbsp;List<br />(I)RC</small></th>
-      <th>Description</th>
-      <th>Used By</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><img src="https://cdn2.hubspot.net/hub/313203/file-521910805-png/Layout/images/favicon.png" class="favicon" /> <strong>flumotion</strong></td>
-      <td><a href="https://code.flumotion.com/cgit/">(C)</a> <a href="http://lists.fluendo.com/mailman/listinfo">(M)</a> <a href="irc://irc.freenode.org/#fluendo">(I)</a></td>
-      <td>Flumotion is an award winning streaming software created in 2006 by a group of open source developers and multimedia experts. Flumotion Streaming Software allows broadcasters and companies to stream content live and on demand in all the leading formats from a single server.</td>
-      <td>Used for live video streaming.</td>
-    </tr>
-    <tr>
-      <td><img src="http://gstreamer.freedesktop.org/planet/images/gstgotchi.png" class="favicon" /> <strong>gstreamer</strong></td>
-      <td><a href="http://cgit.freedesktop.org/gstreamer">(C)</a> <a href="http://gstreamer.freedesktop.org/lists/">(M)</a> <a href="irc://irc.freenode.org/#gstreamer">(I)</a></td>
-      <td>GStreamer is a library for constructing graphs of media-handling components. The applications it supports range from simple Ogg/Vorbis playback, audio/video streaming to complex audio (mixing) and video (non-linear editing) processing. Applications can take advantage of advances in codec and filter technology transparently. Developers can add new codecs and filters by writing a simple plugin with a clean, generic interface.</td>
-      <td>Used by <strong>gst-switch</strong>, <strong>speakertrack</strong> and <strong>flumotion</strong>.</td>
-    </tr>
-    <tr>
-      <td><strong>eventstreamer</strong></td>
+      <td>eventstreamer</td>
       <td><a href="https://github.com/lukejohnosmahi/eventstreamr">(C)</a></td>
       <td>EventStreamer is a single and multi room audio visual stream management. It is designed to scale down for a single monthly LUG talk and scale up for conferences such as linux.conf.au. The base OS image forms the foundation for eventstreamr. The goals are simple: every host has the base image installed, the base image includes all software required to perform all roles and simple setup script to go from imaged to production.</td>
-      <td>Used by <strong>linux.conf.au 2014</strong> and <strong><a href="http://plug.org.au">PLUG</a></strong>.</td>
     </tr>
   </tbody>
 </table>
